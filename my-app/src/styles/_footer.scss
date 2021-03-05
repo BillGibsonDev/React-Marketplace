@@ -1,0 +1,99 @@
+.footer {
+    background: rgba(48, 48, 48, 1);
+    min-height: 40vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    a {
+        color: white;
+    }
+    .list-container {
+        min-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .foot-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 2% 2%;
+    }
+    h4 {
+        text-emphasis: bold;
+        font-size: 2.5rem;
+        padding: 1.5rem 1.5rem;
+    }
+    li a {
+        padding: .5rem .5rem;
+        margin: 2rem;
+        font-size: 2rem;
+        &:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    }
+    li {
+        line-height: 1.5;
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .socials img {
+        width: 40%;
+        cursor: pointer;
+        padding: 1rem;
+        margin: .5rem;
+        object-fit: cover;
+        &:hover {
+            filter: opacity(.5);
+        }
+    }
+    .socials a {
+        padding: 1rem;
+        margin: 1rem;
+        &:hover {
+            color: red;
+        }
+    }
+    // Join Email List Form
+    .form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    .email-label {
+        margin: 2rem;
+    }
+    form input {
+        font-size: 2rem;
+        margin: 1rem;
+        text-align: center;
+        border: 2px solid black;
+    }
+    form button {
+        font-size: 1.5rem;
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .list-container {
+        flex-direction: column;
+    }
+}
