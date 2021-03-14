@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState , useEffect} from 'react'
+import {Link} from 'react-router-dom';
+
 
 // images
 import D1 from '../styles/images/panel1.jpg';
@@ -9,9 +11,12 @@ import D5 from '../styles/images/panel21.jpg';
 import D6 from '../styles/images/panel23.jpg';
 import D7 from '../styles/images/panel2.jpg';
 
-export default function designs() {
+export default function Designs() {
+  
+
     return (
-        <div>
+        <>
+        
          <section className="designs">
           <h1>Discover appearel and accesories from independant artists, creators and more.</h1>
           <div className="designs-grid">
@@ -24,6 +29,6 @@ export default function designs() {
             <a href="#" id="wide"><img src={D7} className="design-image" /></a>
           </div>
          </section>
-        </div>
+        </>
     )
 }

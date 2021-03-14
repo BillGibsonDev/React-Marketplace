@@ -43,4 +43,21 @@
             filter: opacity(.5);
         }
     }
+    .img-container {
+        position: relative;
+        text-align: center;
+    }
+    .img-container h5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-size: 1.5rem;
+        color: blue;
+    }
+    #click-me {
+        color: red;
+        font-size: 3rem;
+    }
 }

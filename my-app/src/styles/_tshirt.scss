@@ -9,9 +9,10 @@
           padding: 2rem;
           flex-direction: column;
           margin: auto;
+          top: 20%;
       }
       .image-container img {
-          width: 90%;
+          width: 80%;
       }
       .tshirt-image {
           display: flex;
@@ -64,7 +65,15 @@
           margin-top: 20%;
       }
       .tshirt-title {
-          font-size: 3rem;
+          font-size: 2rem;
+          padding: 1rem;
+          font-weight: 700;
+          border-bottom: 1px solid black;
+      }
+      .tshirt-description {
+          font-size: 1.5rem;
+          color: rgb(56, 56, 56);
+          margin: 1rem 0;
           padding: 1rem;
       }
       .selector-container {
@@ -90,7 +99,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          text-align: center;
           width: 70%;
+      }
+      .radio-label {
+          display: flex;
+          position: relative;
+          font-size: 1.5rem;
       }
       .radio-title {
           font-size: 1.5rem;
@@ -109,11 +124,25 @@
       label[for="radio"] {
           font-size: 1.5rem;
           cursor: pointer;
-          position: absolute;
-          display: block;
+          &:hover {
+              border: 2px red solid;
+              margin: .5rem;
+              border-radius: 50%;
+              padding: .5rem;
+          }
       }
       input[type="radio"]:checked+label {
-          border: 1px red solid;
+          border: 2px red solid;
+      }
+      .price-container {
+          font-size: 2rem;
+          padding: 1rem;
+          margin: 1rem;
+          border: 1px solid black;
+      }
+      .buttons {
+          margin: 1rem;
+          padding: 1rem;
       }
       #buttons {
           padding: 2rem;
